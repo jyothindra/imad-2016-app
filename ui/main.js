@@ -5,18 +5,22 @@ element.innerHTML = 'new value';
 
 // move the image
 var img = document.getElementById('madi');
-var marginleft=10;
-var marginright=10;
-function moveRight() {
-    marginleft = marginleft + 10;
+function moveRight(){
+ marginleft = marginleft + 10;
   img.style.marginLeft = marginleft + 'px' ;  
 }
-function moveLeft() {
-    marginright = marginright + 10;
-  img.style.marginRight =marginright + 'px' ;  
+function moveLeft(){
+ marginright = marginright + 10;
+  img.style.marginRight = marginright + 'px' ;  
+}
+var marginleft=10;
+var marginright=10;
+function decide(){
+if(marginleft<60)
+moveRight();
+else
+moveLeft();
 }
 img.onclick = function(){
-  var interval = setInterval(moveRight,  100);
- var  interval1 = setInterval(moveLeft, 100);
-    
+  var interval = setInterval(decide,  100);
 };
