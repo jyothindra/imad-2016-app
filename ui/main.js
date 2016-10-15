@@ -6,7 +6,7 @@ element.innerHTML = 'new value';
 // move the image
 var img = document.getElementById('madi');
 function moveRight() {
-  img.style.marginLeft = '10px';  
+  img.style.marginLeft = 10 + 'px' ;  
 }
 img.onclick = function(){
   var interval = setInterval(moveRight,  100); 
