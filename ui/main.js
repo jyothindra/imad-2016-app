@@ -17,10 +17,13 @@ var marginleft=10;
 var marginright=10;
 function decide(){
 if(marginleft<60)
+{
 moveRight();
+}
 else
 {
-marginleft=0;    
+marginleft=0;
+marginright=10;
 moveLeft();
 }
 }
