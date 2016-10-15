@@ -20,7 +20,7 @@ if(marginleft<60)
 moveRight();
 else
 {
-marginleft=marginleft-70;    
+marginleft=0;    
 moveLeft();
 }
 }
