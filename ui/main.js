@@ -16,7 +16,7 @@ function moveLeft() {
   img.style.marginRight =marginright + 'px' ;  
 }
 img.onclick = function(){
-    if(marginleft<60 & marginright<50 )
+    if(marginleft<60)
   var interval = setInterval(moveRight,  100);
   else
  var  interval1 = setInterval(moveLeft, 100);
