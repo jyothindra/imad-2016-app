@@ -19,8 +19,10 @@ function decide(){
 if(marginleft<60)
 moveRight();
 else
+{
+marginleft=marginleft-20;    
 moveLeft();
-marginleft = marginleft-10;
+}
 }
 img.onclick = function(){
   var interval = setInterval(decide,  100);
